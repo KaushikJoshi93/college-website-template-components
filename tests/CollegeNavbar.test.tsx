@@ -4,7 +4,7 @@ import { CollegeNavbar } from '../src'
 
 import 'jest-canvas-mock'
 
-jest.mock('../src/components/CollegeNavbar/college_navbar.css', () => ({}))
+jest.mock('../src/index.css', () => ({}))
 
 // eslint-disable-next-line no-undef
 describe('CollegeNavbar redering test', () => {
