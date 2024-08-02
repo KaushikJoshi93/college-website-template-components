@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './college_navbar.css'
+import '../../index.css'
 
 type MenuItem = {
   name: string

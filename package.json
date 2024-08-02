@@ -11,12 +11,13 @@
   },
   "scripts": {
     "build": "npm run build:esm && npm run build:cjs",
+    "copy-files": "copyfiles -u 1 src/**/*.css dist/cjs && copyfiles -u 1 src/**/*.css dist/esm",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
     "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
     "test": "jest --config jestconfig.json",
-    "prepare": "npm run build",
+    "prepare": "npm run build && npm run copy-files",
     "prepublishOnly": "npm test && npm run prettier && npm run lint"
   },
   "keywords": [
@@ -31,6 +32,7 @@
   "license": "ISC",
   "dependencies": {
     "@types/react": "^18.3.3",
+    "copyfiles": "^2.4.1",
     "react": ">=18",
     "react-dom": "^18.3.1",
     "typescript": "^5.5.4"
@@ -40,6 +42,7 @@
   },
   "files": [
     "dist",
+    "src/index.css",
     "LICENSE",
     "README.md"
   ],
