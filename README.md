@@ -1,6 +1,7 @@
 # **College Website Template Components**
 
 [![College Website Template Components](https://img.shields.io/badge/College%20Website%20Template%20Components-v0.1.0-blue.svg)](https://github.com/KaushikJoshi93/college-website-template-components)
+[![npm](https://img.shields.io/npm/v/college-website-template-components.svg)](https://www.npmjs.com/package/college-website-template-components)
 
 **A comprehensive set of React components for building a stunning college website**
 
